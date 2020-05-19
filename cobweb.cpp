@@ -1,3 +1,10 @@
+// https://acm.timus.ru/problem.aspx?space=1&num=1671
+// đầu tiên union_set tất cả  các thread không có trong danh sách queyry, sau đó tìm số thành phần liên thông
+// query offline, truy vấn ngược từ cuối lên đầu
+// với mỗi query, kiểm tra xem 2 thằng ở thread đó có  cùng thành phần  liên thông không(bằng dsu)
+// nếu khác  thành  phần liên thông thì trừ đi 1 vào số thành phần  liên thông ban đầu đã tính
+// query update ngược rồi xuất ra
+
 #include <bits/stdc++.h>
 
 using namespace std;
